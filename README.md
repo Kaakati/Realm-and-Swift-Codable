@@ -3,6 +3,26 @@ How to implement Swift 4 Codable with Realm Database in your Models?
 
 This guide will demonstrate the implementation method for Realm Object containing a List, with Swift 4 Codable.
 
+### JSON
+```JSON
+{
+    "id": 732,
+    "name": "Vendor Name",
+    "logo": ".../thumb/missing.png",
+    "kitchens": [
+      {
+        "id": 36,
+        "name": "Sandwiches"
+      },
+      {
+        "id": 37,
+        "name": "Fast Food"
+      }
+    ]
+  }
+```
+### Model
+
 ```Swift
 import RealmSwift
 
@@ -54,4 +74,26 @@ class VendorKitchens : Object, Decodable {
         case name
     }
 }
+```
+### URLSession
+```Swift
+guard let getUrl = URL(string: "https://Your_Endpoint/.../") else { return }
+        URLSession.shared.dataTask(with: getUrl) { (data, response, error) in
+            guard let data = data else { return }
+            do {
+                let decoder = JSONDecoder()
+                let getData = try decoder.decode([VendorsList].self, from: data)
+                    for data in getData {
+                        print(data.id)
+                        print(data.name)
+                        print(data.logo)
+                    }
+                    for kitchen in data.kitchensList {
+                        print(kitchen.name)
+                    }
+                }
+            } catch let err {
+                print("Err", err)
+            }
+            }.resume()
 ```
