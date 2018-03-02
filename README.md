@@ -1,7 +1,13 @@
 # Realm & Swift Codable
+
+![alt text](https://github.com/Kaakati/Realm-and-Swift-Codable/blob/master/built%20for_%20Swift%204.png?raw=true)
+![alt text](https://github.com/Kaakati/Realm-and-Swift-Codable/blob/master/powered%20by_%20Realm.png?raw=true)
+
 How to implement Swift 4 Codable with Realm Database in your Models?
 
 This guide will demonstrate the implementation method for Realm Object containing a List, with Swift 4 Codable.
+
+
 
 ### JSON
 ```JSON
