@@ -1,5 +1,5 @@
 # Realm & Swift Codable
-How to implement Swift 4 Codable with Realm Database?
+How to implement Swift 4 Codable with Realm Database in your Models?
 
 This guide will demonstrate the implementation method for Realm Object containing a List, with Swift 4 Codable.
 
