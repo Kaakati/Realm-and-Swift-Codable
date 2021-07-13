@@ -1,5 +1,6 @@
 # Realm & Swift Codable
 
+[![Visits Badge](https://badges.pufler.dev/visits/kaakati/Realm-and-Swift-Codable)](https://badges.pufler.dev)
 ![alt text](https://github.com/Kaakati/Realm-and-Swift-Codable/blob/master/built%20for_%20Swift%204.png?raw=true)
 ![alt text](https://github.com/Kaakati/Realm-and-Swift-Codable/blob/master/powered%20by_%20Realm.png?raw=true)
 
